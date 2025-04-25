@@ -62,11 +62,12 @@ const PostJobs = () => {
       console.log('Job posted:', res.data);
       if(res.data.success){
         toast.success(res.data.message)
-        setTimeout(() => {
+        // setTimeout(() => {
           navigate('/admin/jobs')
-        }, 1000) // wait 1 second before navigating
-      }
+      //   }, 1000) // wait 1 second before navigating
+     }
       
+
     } catch (error) {
       toast.error(error.response.data.message)
       

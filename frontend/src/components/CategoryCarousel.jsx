@@ -33,7 +33,7 @@ const searchJobHandler = (query) => {
             <Carousel className= "w-full max-w-xl mx-auto my-20">
                 <CarouselContent>
                     {category.map((cat, index) => (
-                        <CarouselItem  className= "md:basis-1/2 lg-basis-1/3">
+                        <CarouselItem   key={index} className= "md:basis-1/2 lg-basis-1/3">
                             <Button onClick={() => searchJobHandler(cat)}className="rounded-full" variant="outline"> {cat}</Button>
 
                         </CarouselItem>
